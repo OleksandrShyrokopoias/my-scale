@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myscale</title>
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header">
+                <div class="header__top-wrapper">
+                    <div class="container">
+                        <div class="header__top">
+                            <div class="header__top-adress">
+                               <a href="mailto:curtis.weaver@example.com">
+                                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.585786 0.585786C0 1.17157 0 2.11438 0 4V10C0 11.8856 0 12.8284 0.585786 13.4142C1.17157 14 2.11438 14 4 14H14C15.8856 14 16.8284 14 17.4142 13.4142C18 12.8284 18 11.8856 18 10V4C18 2.11438 18 1.17157 17.4142 0.585786C16.8284 0 15.8856 0 14 0H4C2.11438 0 1.17157 0 0.585786 0.585786ZM3.5547 3.16795C3.09517 2.8616 2.4743 2.98577 2.16795 3.4453C1.8616 3.90483 1.98577 4.5257 2.4453 4.83205L7.8906 8.46225C8.5624 8.91012 9.4376 8.91012 10.1094 8.46225L15.5547 4.83205C16.0142 4.5257 16.1384 3.90483 15.8321 3.4453C15.5257 2.98577 14.9048 2.8616 14.4453 3.16795L9 6.79815L3.5547 3.16795Z" fill="#F15A24"/>
+                                    </svg>
+                                    curtis.weaver@example.com
+                                </a>
+                               <a href="tel:+(219) 555-0114">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.9975 16C6.46587 16.0121 -0.00911762 9.4595 9.63742e-06 1.00251C9.63742e-06 0.450225 0.447725 0 1.00001 0H3.63937C4.13494 0 4.55593 0.364129 4.6287 0.854329C4.80311 2.0292 5.14517 3.17297 5.64449 4.2507L5.74725 4.4725C5.89013 4.78091 5.79328 5.14734 5.51668 5.34487C4.6993 5.92859 4.38692 7.10355 5.0237 8.02036C5.82278 9.17084 6.83005 10.1779 7.98027 10.9766C8.89702 11.6132 10.0718 11.3009 10.6555 10.4836C10.8532 10.2069 11.2198 10.11 11.5284 10.2529L11.7492 10.3552C12.827 10.8545 13.9708 11.1966 15.1458 11.371C15.636 11.4437 16 11.8647 16 12.3603V15C16 15.5523 15.5512 16 14.9989 16L14.9975 16Z" fill="#F15A24"/>
+                                    </svg>
+                                    (219) 555-0114
+                                </a>
+                            </div>
+                            <div class="header__top-social">
+                                <a href="https://www.instagram.com/">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8C0 4.22876 0 2.34315 1.17157 1.17157C2.34315 0 4.22876 0 8 0H10C13.7712 0 15.6569 0 16.8284 1.17157C18 2.34315 18 4.22876 18 8V10C18 13.7712 18 15.6569 16.8284 16.8284C15.6569 18 13.7712 18 10 18H8C4.22876 18 2.34315 18 1.17157 16.8284C0 15.6569 0 13.7712 0 10V8ZM15 4.5C15 5.32843 14.3284 6 13.5 6C12.6716 6 12 5.32843 12 4.5C12 3.67157 12.6716 3 13.5 3C14.3284 3 15 3.67157 15 4.5ZM11 10C11 11.1046 10.1046 12 9 12C7.89543 12 7 11.1046 7 10C7 8.89543 7.89543 8 9 8C10.1046 8 11 8.89543 11 10ZM13 10C13 12.2091 11.2091 14 9 14C6.79086 14 5 12.2091 5 10C5 7.79086 6.79086 6 9 6C11.2091 6 13 7.79086 13 10Z" fill="#405365"/>
+                                    </svg>
+                               </a>
+                               <a href="https://twitter.com/?lang=uk">
+                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18 2.27577C17.3306 2.57692 16.6174 2.77654 15.8737 2.87346C16.6387 2.405 17.2226 1.66885 17.4971 0.781538C16.7839 1.21769 15.9964 1.52577 15.1571 1.69769C14.4799 0.958077 13.5146 0.5 12.4616 0.5C10.4186 0.5 8.77387 2.20077 8.77387 4.28577C8.77387 4.58577 8.79862 4.87423 8.85938 5.14885C5.7915 4.99538 3.07688 3.48731 1.25325 1.19C0.934875 1.75654 0.748125 2.405 0.748125 3.10308C0.748125 4.41385 1.40625 5.57577 2.38725 6.24846C1.79437 6.23692 1.21275 6.06038 0.72 5.78231C0.72 5.79385 0.72 5.80885 0.72 5.82385C0.72 7.66308 1.99912 9.19077 3.6765 9.54269C3.37612 9.62692 3.04875 9.66731 2.709 9.66731C2.47275 9.66731 2.23425 9.65346 2.01037 9.60269C2.4885 11.1015 3.84525 12.2035 5.4585 12.2392C4.203 13.2465 2.60888 13.8535 0.883125 13.8535C0.5805 13.8535 0.29025 13.8396 0 13.8015C1.63462 14.8827 3.57188 15.5 5.661 15.5C12.4515 15.5 16.164 9.73077 16.164 4.73C16.164 4.56269 16.1584 4.40115 16.1505 4.24077C16.8829 3.70769 17.4982 3.04192 18 2.27577Z" fill="#405365"/>
+                                    </svg>
+                                </a>
+                                <a href="https://uk-ua.facebook.com/">
+                                    <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.23555 8.94507C2.1805 8.94507 0.969341 8.94507 0.418815 8.94507C0.125202 8.94507 0.0334473 8.83497 0.0334473 8.5597C0.0334473 7.82567 0.0334473 7.07329 0.0334473 6.33925C0.0334473 6.04564 0.143552 5.95389 0.418815 5.95389H2.23555C2.23555 5.89884 2.23555 4.83449 2.23555 4.33902C2.23555 3.60498 2.364 2.90765 2.73102 2.26537C3.11639 1.60475 3.66692 1.16433 4.36425 0.907414C4.82302 0.742257 5.28179 0.668854 5.77726 0.668854H7.57565C7.83256 0.668854 7.94266 0.778959 7.94266 1.03587V3.12786C7.94266 3.38477 7.83256 3.49488 7.57565 3.49488C7.08017 3.49488 6.5847 3.49488 6.08923 3.51323C5.59375 3.51323 5.33684 3.75179 5.33684 4.26561C5.31849 4.81614 5.33684 5.34831 5.33684 5.91719H7.46554C7.75915 5.91719 7.86926 6.02729 7.86926 6.3209V8.54135C7.86926 8.83497 7.7775 8.92672 7.46554 8.92672C6.80491 8.92672 5.39189 8.92672 5.33684 8.92672V14.9091C5.33684 15.221 5.24509 15.3312 4.91477 15.3312C4.14404 15.3312 3.39165 15.3312 2.62092 15.3312C2.34565 15.3312 2.23555 15.221 2.23555 14.9458C2.23555 13.019 2.23555 9.00012 2.23555 8.94507V8.94507Z" fill="#405365"/>
+                                    </svg>  
+                                </a>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="container">
+                   <div class="header__bottom">
+                        <a href="index.html" class="logo">
+                            <img src="img/icon/logo.png" alt="logo">
+                        </a>
+                        <nav class="menu">
+                            <ul class="menu-list">
+                                <li class="menu-list-item"><a class="menu-list-link" href="index.html">home</a></li>
+                                <li class="menu-list-item"><a class="menu-list-link" href="references.html">References</a></li>
+                                <li class="menu-list-item"><a class="menu-list-link" href="about.html">About Us</a></li>
+                                <li class="menu-list-item"><a class="menu-list-link" href="career.html">Career</a></li>
+                                <li class="menu-list-item"><a class="menu-list-link" href="blog.html">Blog</a></li>
+                                <li class="menu-list-item"><a class="menu-list-link link-list-menu-active" href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <a class="header__bottom-portal" href="#">
+                            <div class="header__bottom-portal-wrapper">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="#14181F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15 3H21V9" stroke="#F15A24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10 14L21 3" stroke="#F15A24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <p>Customer Portal</p>
+                                <span>portal.my-scale.de</span>
+                            </div>
+                        </a>
+                        <buttom class="nav-button">
+                            <span class="button-line"></span>
+                            <span class="button-line"></span>
+                        </buttom>
+                   </div>
+                </div>
+            </div>
+            <div class="header-mobile">
+                <div class="container">
+                    <div class="header__bottom">
+                         <a href="index.html" class="logo">
+                             <img src="img/icon/logo.png" alt="logo">
+                         </a>
+                         <div class="header__menu">
+                            <div class="header__menu-wrapper">
+                                <nav class="menu">
+                                    <ul class="menu-list">
+                                        <li class="menu-list-item"><a class="menu-list-link " href="index.html">home</a></li>
+                                        <li class="menu-list-item"><a class="menu-list-link" href="references.html">References</a></li>
+                                        <li class="menu-list-item"><a class="menu-list-link" href="about.html">About Us</a></li>
+                                        <li class="menu-list-item"><a class="menu-list-link" href="career.html">Career</a></li>
+                                        <li class="menu-list-item"><a class="menu-list-link" href="blog.html">Blog</a></li>
+                                        <li class="menu-list-item"><a class="menu-list-link link-list-menu-active" href="contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>
+                                <a class="header__bottom-portal" href="#">
+                                    <div class="header__bottom-portal-wrapper">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18 13V19C18 19.5304 17.7893 20.0391 17.4142 20.4142C17.0391 20.7893 16.5304 21 16 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V8C3 7.46957 3.21071 6.96086 3.58579 6.58579C3.96086 6.21071 4.46957 6 5 6H11" stroke="#14181F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15 3H21V9" stroke="#F15A24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10 14L21 3" stroke="#F15A24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <p>Customer Portal</p>
+                                        <span>portal.my-scale.de</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="header__top">
+                               <div class="header__top-adress">
+                                  <a href="mailto:curtis.weaver@example.com">
+                                       <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                           <path fill-rule="evenodd" clip-rule="evenodd" d="M0.585786 0.585786C0 1.17157 0 2.11438 0 4V10C0 11.8856 0 12.8284 0.585786 13.4142C1.17157 14 2.11438 14 4 14H14C15.8856 14 16.8284 14 17.4142 13.4142C18 12.8284 18 11.8856 18 10V4C18 2.11438 18 1.17157 17.4142 0.585786C16.8284 0 15.8856 0 14 0H4C2.11438 0 1.17157 0 0.585786 0.585786ZM3.5547 3.16795C3.09517 2.8616 2.4743 2.98577 2.16795 3.4453C1.8616 3.90483 1.98577 4.5257 2.4453 4.83205L7.8906 8.46225C8.5624 8.91012 9.4376 8.91012 10.1094 8.46225L15.5547 4.83205C16.0142 4.5257 16.1384 3.90483 15.8321 3.4453C15.5257 2.98577 14.9048 2.8616 14.4453 3.16795L9 6.79815L3.5547 3.16795Z" fill="#F15A24"/>
+                                       </svg>
+                                       curtis.weaver@example.com
+                                   </a>
+                                  <a href="tel:+(219) 555-0114">
+                                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                           <path d="M14.9975 16C6.46587 16.0121 -0.00911762 9.4595 9.63742e-06 1.00251C9.63742e-06 0.450225 0.447725 0 1.00001 0H3.63937C4.13494 0 4.55593 0.364129 4.6287 0.854329C4.80311 2.0292 5.14517 3.17297 5.64449 4.2507L5.74725 4.4725C5.89013 4.78091 5.79328 5.14734 5.51668 5.34487C4.6993 5.92859 4.38692 7.10355 5.0237 8.02036C5.82278 9.17084 6.83005 10.1779 7.98027 10.9766C8.89702 11.6132 10.0718 11.3009 10.6555 10.4836C10.8532 10.2069 11.2198 10.11 11.5284 10.2529L11.7492 10.3552C12.827 10.8545 13.9708 11.1966 15.1458 11.371C15.636 11.4437 16 11.8647 16 12.3603V15C16 15.5523 15.5512 16 14.9989 16L14.9975 16Z" fill="#F15A24"/>
+                                       </svg>
+                                       (219) 555-0114
+                                   </a>
+                               </div>
+                               <div class="header__top-social">
+                                   <a href="https://www.instagram.com/">
+                                       <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                           <path fill-rule="evenodd" clip-rule="evenodd" d="M0 8C0 4.22876 0 2.34315 1.17157 1.17157C2.34315 0 4.22876 0 8 0H10C13.7712 0 15.6569 0 16.8284 1.17157C18 2.34315 18 4.22876 18 8V10C18 13.7712 18 15.6569 16.8284 16.8284C15.6569 18 13.7712 18 10 18H8C4.22876 18 2.34315 18 1.17157 16.8284C0 15.6569 0 13.7712 0 10V8ZM15 4.5C15 5.32843 14.3284 6 13.5 6C12.6716 6 12 5.32843 12 4.5C12 3.67157 12.6716 3 13.5 3C14.3284 3 15 3.67157 15 4.5ZM11 10C11 11.1046 10.1046 12 9 12C7.89543 12 7 11.1046 7 10C7 8.89543 7.89543 8 9 8C10.1046 8 11 8.89543 11 10ZM13 10C13 12.2091 11.2091 14 9 14C6.79086 14 5 12.2091 5 10C5 7.79086 6.79086 6 9 6C11.2091 6 13 7.79086 13 10Z" fill="#405365"/>
+                                       </svg>
+                                  </a>
+                                  <a href="https://twitter.com/?lang=uk">
+                                       <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                           <path d="M18 2.27577C17.3306 2.57692 16.6174 2.77654 15.8737 2.87346C16.6387 2.405 17.2226 1.66885 17.4971 0.781538C16.7839 1.21769 15.9964 1.52577 15.1571 1.69769C14.4799 0.958077 13.5146 0.5 12.4616 0.5C10.4186 0.5 8.77387 2.20077 8.77387 4.28577C8.77387 4.58577 8.79862 4.87423 8.85938 5.14885C5.7915 4.99538 3.07688 3.48731 1.25325 1.19C0.934875 1.75654 0.748125 2.405 0.748125 3.10308C0.748125 4.41385 1.40625 5.57577 2.38725 6.24846C1.79437 6.23692 1.21275 6.06038 0.72 5.78231C0.72 5.79385 0.72 5.80885 0.72 5.82385C0.72 7.66308 1.99912 9.19077 3.6765 9.54269C3.37612 9.62692 3.04875 9.66731 2.709 9.66731C2.47275 9.66731 2.23425 9.65346 2.01037 9.60269C2.4885 11.1015 3.84525 12.2035 5.4585 12.2392C4.203 13.2465 2.60888 13.8535 0.883125 13.8535C0.5805 13.8535 0.29025 13.8396 0 13.8015C1.63462 14.8827 3.57188 15.5 5.661 15.5C12.4515 15.5 16.164 9.73077 16.164 4.73C16.164 4.56269 16.1584 4.40115 16.1505 4.24077C16.8829 3.70769 17.4982 3.04192 18 2.27577Z" fill="#405365"/>
+                                       </svg>
+                                   </a>
+                                   <a href="https://uk-ua.facebook.com/">
+                                       <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                           <path d="M2.23555 8.94507C2.1805 8.94507 0.969341 8.94507 0.418815 8.94507C0.125202 8.94507 0.0334473 8.83497 0.0334473 8.5597C0.0334473 7.82567 0.0334473 7.07329 0.0334473 6.33925C0.0334473 6.04564 0.143552 5.95389 0.418815 5.95389H2.23555C2.23555 5.89884 2.23555 4.83449 2.23555 4.33902C2.23555 3.60498 2.364 2.90765 2.73102 2.26537C3.11639 1.60475 3.66692 1.16433 4.36425 0.907414C4.82302 0.742257 5.28179 0.668854 5.77726 0.668854H7.57565C7.83256 0.668854 7.94266 0.778959 7.94266 1.03587V3.12786C7.94266 3.38477 7.83256 3.49488 7.57565 3.49488C7.08017 3.49488 6.5847 3.49488 6.08923 3.51323C5.59375 3.51323 5.33684 3.75179 5.33684 4.26561C5.31849 4.81614 5.33684 5.34831 5.33684 5.91719H7.46554C7.75915 5.91719 7.86926 6.02729 7.86926 6.3209V8.54135C7.86926 8.83497 7.7775 8.92672 7.46554 8.92672C6.80491 8.92672 5.39189 8.92672 5.33684 8.92672V14.9091C5.33684 15.221 5.24509 15.3312 4.91477 15.3312C4.14404 15.3312 3.39165 15.3312 2.62092 15.3312C2.34565 15.3312 2.23555 15.221 2.23555 14.9458C2.23555 13.019 2.23555 9.00012 2.23555 8.94507V8.94507Z" fill="#405365"/>
+                                       </svg>  
+                                   </a>
+                               </div>
+                          </div>
+                         </div>
+                         <buttom class="menu-button">
+                             <span class="button-line"></span>
+                             <span class="button-line"></span>
+                         </buttom>
+                    </div>
+                 </div>
+            </div>
+        </header>
+        <main>
+          <section class="contact-hero">
+            <div class="background__contact-hero"></div>
+            <div class="container">
+                <div class="contact-hero__inner">
+                    <div class="contact-hero__description">
+                        <h1>contact</h1>
+                        <div class="pagination-box">
+                            <a href="index.html">Home</a>
+                            <span>Career</span>
+                        </div>
+                        <div class="home-contact__text-touch">
+                            <a href="tel:+1.809.120.6705" class="contact__text-image">
+                                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="56" height="56" rx="28" fill="#F15A24"/>
+                                    <path d="M32.4176 15.625C34.3247 16.1379 36.0636 17.1429 37.4601 18.5394C38.8566 19.9359 39.8616 21.6748 40.3745 23.5819M31.2531 19.9734C32.3973 20.2811 33.4407 20.8842 34.2786 21.722C35.1164 22.5599 35.7195 23.6033 36.0272 24.7476M23.0045 27.5528C24.1714 29.9386 26.1053 31.8637 28.4964 33.0198C28.6713 33.1027 28.8648 33.1386 29.0578 33.124C29.2509 33.1094 29.4368 33.0447 29.5973 32.9365L33.1179 30.5888C33.2736 30.485 33.4528 30.4217 33.6391 30.4045C33.8255 30.3874 34.0132 30.4171 34.1852 30.4908L40.7717 33.3135C40.9954 33.4086 41.1822 33.5738 41.3039 33.7842C41.4256 33.9946 41.4756 34.2389 41.4464 34.4803C41.2382 36.1093 40.4434 37.6065 39.2108 38.6917C37.9782 39.7769 36.3923 40.3756 34.75 40.3757C29.6777 40.3757 24.8132 38.3607 21.2266 34.7741C17.6399 31.1875 15.625 26.323 15.625 21.2507C15.6251 19.6084 16.2238 18.0225 17.309 16.7899C18.3941 15.5573 19.8914 14.7624 21.5204 14.5543C21.7618 14.5251 22.006 14.5751 22.2165 14.6968C22.4269 14.8185 22.5921 15.0053 22.6871 15.229L25.5124 21.8212C25.5854 21.9917 25.6152 22.1777 25.599 22.3625C25.5829 22.5473 25.5212 22.7252 25.4197 22.8804L23.0802 26.4551C22.9737 26.6159 22.9107 26.8016 22.8975 26.994C22.8842 27.1864 22.9211 27.3789 23.0045 27.5528Z" stroke="#001932" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg> 
+                            </a>
+                            <h3>Get in touch</h3>
+                            <div class="text-touch-work">
+                                <span>Work and general inquiries</span>
+                                <p> +1.809.120.6705</p>
+                            </div>
+    
+                            <span> Assistance hours:</span>
+                            <p>Monday - Friday</p>
+                            <p>6 am to 8 pm EST</p>
+                        </div>
+                        <div class="home-contact__text-address">
+                            <a href="mailto:" class="contact__text-image">
+                                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="56" height="56" rx="28" fill="#F15A24"/>
+                                    <path d="M14.5 17.875H41.5M14.5 17.875V37C14.5 37.2984 14.6185 37.5845 14.8295 37.7955C15.0405 38.0065 15.3266 38.125 15.625 38.125H40.375C40.6734 38.125 40.9595 38.0065 41.1705 37.7955C41.3815 37.5845 41.5 37.2984 41.5 37V17.875M14.5 17.875L28 30.25L41.5 17.875" stroke="#001932" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>  
+                            </a>
+                            <h3>Post address</h3>
+                            <p>541 Melville Ave, Palo Alto, <br>
+                                CA 94301,<br>
+                                United States</p>
+                        </div>
+                    </div>
+                    <div class="contact-hero__form">
+                        <h2>Level up <span>your brand</span></h2>
+                        <form class="form-contact" action="">
+                            <div class="form-box-input-wrapper">
+                                <div class="form-box-input">
+                                    <label class="form-label" for="username">First name</label>
+                                    <input class="input-form" type="text" placeholder="First name" id="username">   
+                                </div>  
+                                <div class="form-box-input">
+                                    <label class="form-label" for="username">Last name</label>
+                                    <input class="input-form" type="text" placeholder="Last name" id="lastname">   
+                                </div>              
+                            </div>
+                            <label class="form-label" for="usermail">Email</label>
+                            <input class="input-form" type="email" name="" id="usermail" placeholder="you@company.com">
+                            <label class="form-label" for="userphone">Phone number</label>
+                            <input class="input-form" type="tel:+1 (555) 000-0000" name="" id="userphone" placeholder="+1 (555) 000-0000">
+                            <label class="form-label" for="usertext"></label>
+                            <textarea  class="form-text" name="" id="usertext" cols="30" rows="6" placeholder="Leave us a message..."></textarea>
+                            <p class="title-check">Services</p>
+                            <div class="form-box-check__wrapper">
+                                <div class="form-box-check">
+                                    <div class="form-box-check__input">
+                                        <label class="label-check">
+                                            <input class="form-check" type="checkbox">
+                                            <span class="check-style"></span>
+                                            Web Designer
+                                        </label>
+                                    </div>
+                                    <div class="form-box-check__input">
+                                        <label class="label-check">
+                                            <input class="form-check" type="checkbox">
+                                            <span class="check-style"></span>
+                                            Marketing Coordinator
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-box-check">
+                                    <div class="form-box-check__input">
+                                        <label class="label-check">
+                                            <input class="form-check" type="checkbox">
+                                            <span class="check-style"></span>
+                                            Nursing Assistant
+                                        </label>
+                                    </div>
+                                    <div class="form-box-check__input">
+                                        <label class="label-check">
+                                            <input class="form-check" type="checkbox">
+                                            <span class="check-style"></span>
+                                            Medical Assistant
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-box-check">
+                                    <div class="form-box-check__input">
+                                        <label class="label-check">
+                                            <input class="form-check" type="checkbox">
+                                            <span class="check-style"></span>
+                                            President of Sales
+                                        </label>
+                                    </div>
+                                    <div class="form-box-check__input">
+                                        <label class="label-check">
+                                            <input class="form-check" type="checkbox">
+                                            <span class="check-style"></span>
+                                            Marketing Coordinator
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="button-submit" type="submit">Get Started
+                                <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 4L10.59 5.41L16.17 11H4V13H16.17L10.59 18.59L12 20L20 12L12 4Z" fill="white"/>
+                                    </svg>
+                                    </span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+          </section>
+        </main>
+        <footer>
+            <section class="footer">
+                <div class="container">
+                    <div class="footer__top">
+                        <div class="row">
+                            <div class="col-md-3 col col-sm-12">
+                                <div class="footer__top-social">
+                                    <a class="footer-logo" href="index.html">
+                                        <img src="img/icon/logo.png" alt="logo">
+                                    </a>
+                                    <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 11C3 7.22876 3 5.34315 4.17157 4.17157C5.34315 3 7.22876 3 11 3H13C16.7712 3 18.6569 3 19.8284 4.17157C21 5.34315 21 7.22876 21 11V13C21 16.7712 21 18.6569 19.8284 19.8284C18.6569 21 16.7712 21 13 21H11C7.22876 21 5.34315 21 4.17157 19.8284C3 18.6569 3 16.7712 3 13V11ZM18 7.5C18 8.32843 17.3284 9 16.5 9C15.6716 9 15 8.32843 15 7.5C15 6.67157 15.6716 6 16.5 6C17.3284 6 18 6.67157 18 7.5ZM14 13C14 14.1046 13.1046 15 12 15C10.8954 15 10 14.1046 10 13C10 11.8954 10.8954 11 12 11C13.1046 11 14 11.8954 14 13ZM16 13C16 15.2091 14.2091 17 12 17C9.79086 17 8 15.2091 8 13C8 10.7909 9.79086 9 12 9C14.2091 9 16 10.7909 16 13Z" fill="#405365"/>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M21 6.27577C20.3306 6.57692 19.6174 6.77654 18.8737 6.87346C19.6388 6.405 20.2226 5.66885 20.4971 4.78154C19.7839 5.21769 18.9964 5.52577 18.1571 5.69769C17.4799 4.95808 16.5146 4.5 15.4616 4.5C13.4186 4.5 11.7739 6.20077 11.7739 8.28577C11.7739 8.58577 11.7986 8.87423 11.8594 9.14885C8.7915 8.99538 6.07687 7.48731 4.25325 5.19C3.93487 5.75654 3.74813 6.405 3.74813 7.10308C3.74813 8.41385 4.40625 9.57577 5.38725 10.2485C4.79437 10.2369 4.21275 10.0604 3.72 9.78231C3.72 9.79385 3.72 9.80885 3.72 9.82385C3.72 11.6631 4.99912 13.1908 6.6765 13.5427C6.37612 13.6269 6.04875 13.6673 5.709 13.6673C5.47275 13.6673 5.23425 13.6535 5.01038 13.6027C5.4885 15.1015 6.84525 16.2035 8.4585 16.2392C7.203 17.2465 5.60888 17.8535 3.88313 17.8535C3.5805 17.8535 3.29025 17.8396 3 17.8015C4.63462 18.8827 6.57188 19.5 8.661 19.5C15.4515 19.5 19.164 13.7308 19.164 8.73C19.164 8.56269 19.1584 8.40115 19.1505 8.24077C19.8829 7.70769 20.4982 7.04192 21 6.27577Z" fill="#405365"/>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.2355 12.9452C10.1805 12.9452 8.96934 12.9452 8.41882 12.9452C8.1252 12.9452 8.03345 12.8351 8.03345 12.5598C8.03345 11.8258 8.03345 11.0734 8.03345 10.3393C8.03345 10.0457 8.14355 9.95398 8.41882 9.95398H10.2355C10.2355 9.89893 10.2355 8.83458 10.2355 8.33911C10.2355 7.60508 10.364 6.90774 10.731 6.26547C11.1164 5.60484 11.6669 5.16442 12.3642 4.90751C12.823 4.74235 13.2818 4.66895 13.7773 4.66895H15.5756C15.8326 4.66895 15.9427 4.77905 15.9427 5.03596V7.12795C15.9427 7.38487 15.8326 7.49497 15.5756 7.49497C15.0802 7.49497 14.5847 7.49497 14.0892 7.51332C13.5938 7.51332 13.3368 7.75188 13.3368 8.2657C13.3185 8.81623 13.3368 9.3484 13.3368 9.91728H15.4655C15.7592 9.91728 15.8693 10.0274 15.8693 10.321V12.5414C15.8693 12.8351 15.7775 12.9268 15.4655 12.9268C14.8049 12.9268 13.3919 12.9268 13.3368 12.9268V18.9092C13.3368 19.2211 13.2451 19.3312 12.9148 19.3312C12.144 19.3312 11.3917 19.3312 10.6209 19.3312C10.3457 19.3312 10.2355 19.2211 10.2355 18.9459C10.2355 17.019 10.2355 13.0002 10.2355 12.9452Z" fill="#405365"/>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                    </ul>
+                                    <div class="footer__top-social-text">
+                                        <h4>Contact</h4>
+                                        <p>my-scale digitale</p>
+                                        <p>GmbH Alter Holzhafen</p>
+                                        <p>19 23966 Wismar</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12">
+                                <div class="footer__top-link">
+                                    <h4>Useful links</h4>
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">References </a></li>
+                                        <li><a href="#">About us</a></li>
+                                        <li><a href="#">Career</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Contac</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12">
+                                <div class="footer__top-inquiries">
+                                    <div class="footer__top-inquiries-work">
+                                        <h4>Work inquiries</h4>
+                                        <p>Interested in working with us?</p>
+                                        <a href="mailto:info@domain.com">info@domain.com</a>
+                                    </div>
+                                    <div class="footer__top-inquiries-career">
+                                        <h4>career</h4>
+                                        <p>Looking for a job opportunity?</p>
+                                        <a href="#">See open positions</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12">
+                                <div class="footer__top-blog">
+                                    <h4>Last blog posts</h4>
+                                    <a href="">
+                                        <div class="footer__top-blog-post">
+                                            <div class="footer__blog-post-img">
+                                                <img src="img/Home/blog1.webp" alt="foto">
+                                            </div>
+                                            <div class="footer__blog-post-text">
+                                                <span>15 Jan 2020, 22:13</span>
+                                                <p>Mattis at vitae ut nunc lacus faucibus.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__top-blog-post">
+                                            <div class="footer__blog-post-img">
+                                                <img src="img/Home/blog2.webp" alt="foto">
+                                            </div>
+                                            <div class="footer__blog-post-text">
+                                                <span>23 Nov 2020, 18:51</span>
+                                                <p>A vel volutpat nisi dui diam cursus nulla molestie.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                   <a href="">
+                                        <div class="footer__top-blog-post">
+                                            <div class="footer__blog-post-img">
+                                                <img src="img/Home/blog3png.webp" alt="foto">
+                                            </div>
+                                            <div class="footer__blog-post-text">
+                                                <span>8 Dec 2020, 14:22</span>
+                                                <p>Sit sed tempus morbi mauris varius quis dolor morbi.</p>
+                                            </div>
+                                        </div>
+                                   </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <div class="footer__bottom-copyright">
+                            <p>© 2019-2022 Myscale. All rights reserved.</p>
+                        </div>
+                        <div class="footer__bottom-nav">
+                            <ul>
+                                <li><a href="#">Sitemap</a></li>
+                                <li><a href="#">Security</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms of Service</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="libs/jquery-3.6.4.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
